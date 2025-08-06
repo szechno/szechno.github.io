@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "personal",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2\n\n\nGrrr…. so many helpers isn’t helping\nAnd will this spur some kinda change?\nAnd whatabout now??\nOkay… create repo… using docs folder and drag and drop all files into repo Then rendering and publishing works… I hope\nHi Liz. I love you :)"
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2\n\n\nGrrr…. so many helpers isn’t helping\nAnd will this spur some kinda change?\nAnd whatabout now??\nOkay… create repo… using docs folder and drag and drop all files into repo Then rendering and publishing works… I hope\nSo, works, but remember to change quarto.yml to output_dir as docs\nNow… were’s my fish?\nHi Liz. I love you :)"
   },
   {
     "objectID": "about.html",
