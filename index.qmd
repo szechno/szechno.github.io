@@ -11,3 +11,5 @@ To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
 ```
 
 Grrr.... so many helpers isn't helping
+
+And will this spur some kinda change?
