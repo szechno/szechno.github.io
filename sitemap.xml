@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://szechno.github.io/index.html</loc>
-    <lastmod>2025-08-12T20:35:09.299Z</lastmod>
-  </url>
-  <url>
-    <loc>https://szechno.github.io/bob.html</loc>
-    <lastmod>2025-08-12T20:53:57.518Z</lastmod>
-  </url>
-  <url>
-    <loc>https://szechno.github.io/about.html</loc>
-    <lastmod>2025-08-06T20:54:47.149Z</lastmod>
+    <loc>https://szechno.github.io/short_stories.html</loc>
+    <lastmod>2025-08-14T21:38:06.292Z</lastmod>
   </url>
   <url>
     <loc>https://szechno.github.io/cuckoo.html</loc>
-    <lastmod>2025-08-12T21:05:01.268Z</lastmod>
+    <lastmod>2025-08-14T21:36:11.826Z</lastmod>
+  </url>
+  <url>
+    <loc>https://szechno.github.io/about.html</loc>
+    <lastmod>2025-08-14T20:49:19.738Z</lastmod>
+  </url>
+  <url>
+    <loc>https://szechno.github.io/archive/bob.html</loc>
+    <lastmod>2025-08-12T20:53:57.518Z</lastmod>
+  </url>
+  <url>
+    <loc>https://szechno.github.io/index.html</loc>
+    <lastmod>2025-08-14T20:34:57.776Z</lastmod>
   </url>
 </urlset>
