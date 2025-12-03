@@ -1,0 +1,15 @@
+{
+  "hash": "3f9ae877fce7ea9de72df17fa0f5453a",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"macka szechno\"\nformat: html\n---\n\nThis is a Quarto website.\n\nTo learn more about Quarto websites visit <https://quarto.org/docs/websites>.\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] 2\n```\n\n\n:::\n:::\n\n\nGrrr.... so many helpers isn't helping\n\nAnd will this spur some kinda change?\n\nAnd whatabout now??\n\nOkay... create repo... using docs folder and drag and drop all files into repo Then rendering and publishing works... I hope\n\nSo, works, but remember to change quarto.yml to output_dir as docs\n\nNow... were's my fish?\n\nSo, to recap:<br /> 1. suck at CS2<br /> 2. create a quarto website via rstudio<br /> 3. set \\_quarto.yml to render to output-dir: docs<br /> 4. create in root with `copy NUL .nojekyll` in rstudio terminal<br /> 5. create repo in github web<br /> 6. drag and drop doc folder to repo<br /> 7. in rstudio terminal to upload changes,<br />  a. render with quarto render<br />  b. publish with quarto publish<br /> 8. any images put in the `\\docs\\images\\` folder and reference them with \"./images/...\"\n\nHi Liz :)\n\n<img src=\"./images/DSC02662.jpg\" alt=\"Girl\" width=\"500px\"/></img>\n\nOkay, so a bit of preamble to see if I can still remember how to update this and then it'll be a case of how best to link documents. maybe even write them in something like Positron which has a more longform setup/feel than RStudio.\n\nRecreated images folder and C:/Users/macka/OneDrive/Pictures/Liz/DSC02662.jpg. Not sure where it went or if I deleted the folder or if there's some wierd option here that's needed...\n\nOkay, images need to be in the root folder and get copied on render to the docs folder.\n\n1.  save page\n2.  render\n3.  publish\n\nRender on save is now ON.\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
