@@ -1,7 +1,0 @@
----
-title: "About Short Stories"
-author: "macka szechno"
-date: last-modified
----
-
-This is my space for publishing short stories. 
