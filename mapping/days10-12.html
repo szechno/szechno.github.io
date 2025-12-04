@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Mark McNamara">
-<meta name="dcterms.date" content="2025-12-03">
+<meta name="dcterms.date" content="2025-12-04">
 
 <title>10-12 – 30 Day Map Challenge - November, 2025</title>
 <style>
@@ -384,14 +384,6 @@ window.document.addEventListener("DOMContentLoaded", function () {
     }
   }
 });
-</script>
-<script>/*!
- * headroom.js v0.12.0 - Give your page some headroom. Hide your header until you need it
- * Copyright (c) 2020 Nick Williams - http://wicky.nillia.ms/headroom.js
- * License: MIT
- */
-
-!function(t,n){"object"==typeof exports&&"undefined"!=typeof module?module.exports=n():"function"==typeof define&&define.amd?define(n):(t=t||self).Headroom=n()}(this,function(){"use strict";function t(){return"undefined"!=typeof window}function d(t){return function(t){return t&&t.document&&function(t){return 9===t.nodeType}(t.document)}(t)?function(t){var n=t.document,o=n.body,s=n.documentElement;return{scrollHeight:function(){return Math.max(o.scrollHeight,s.scrollHeight,o.offsetHeight,s.offsetHeight,o.clientHeight,s.clientHeight)},height:function(){return t.innerHeight||s.clientHeight||o.clientHeight},scrollY:function(){return void 0!==t.pageYOffset?t.pageYOffset:(s||o.parentNode||o).scrollTop}}}(t):function(t){return{scrollHeight:function(){return Math.max(t.scrollHeight,t.offsetHeight,t.clientHeight)},height:function(){return Math.max(t.offsetHeight,t.clientHeight)},scrollY:function(){return t.scrollTop}}}(t)}function n(t,s,e){var n,o=function(){var n=!1;try{var t={get passive(){n=!0}};window.addEventListener("test",t,t),window.removeEventListener("test",t,t)}catch(t){n=!1}return n}(),i=!1,r=d(t),l=r.scrollY(),a={};function c(){var t=Math.round(r.scrollY()),n=r.height(),o=r.scrollHeight();a.scrollY=t,a.lastScrollY=l,a.direction=l<t?"down":"up",a.distance=Math.abs(t-l),a.isOutOfBounds=t<0||o<t+n,a.top=t<=s.offset[a.direction],a.bottom=o<=t+n,a.toleranceExceeded=a.distance>s.tolerance[a.direction],e(a),l=t,i=!1}function h(){i||(i=!0,n=requestAnimationFrame(c))}var u=!!o&&{passive:!0,capture:!1};return t.addEventListener("scroll",h,u),c(),{destroy:function(){cancelAnimationFrame(n),t.removeEventListener("scroll",h,u)}}}function o(t){return t===Object(t)?t:{down:t,up:t}}function s(t,n){n=n||{},Object.assign(this,s.options,n),this.classes=Object.assign({},s.options.classes,n.classes),this.elem=t,this.tolerance=o(this.tolerance),this.offset=o(this.offset),this.initialised=!1,this.frozen=!1}return s.prototype={constructor:s,init:function(){return s.cutsTheMustard&&!this.initialised&&(this.addClass("initial"),this.initialised=!0,setTimeout(function(t){t.scrollTracker=n(t.scroller,{offset:t.offset,tolerance:t.tolerance},t.update.bind(t))},100,this)),this},destroy:function(){this.initialised=!1,Object.keys(this.classes).forEach(this.removeClass,this),this.scrollTracker.destroy()},unpin:function(){!this.hasClass("pinned")&&this.hasClass("unpinned")||(this.addClass("unpinned"),this.removeClass("pinned"),this.onUnpin&&this.onUnpin.call(this))},pin:function(){this.hasClass("unpinned")&&(this.addClass("pinned"),this.removeClass("unpinned"),this.onPin&&this.onPin.call(this))},freeze:function(){this.frozen=!0,this.addClass("frozen")},unfreeze:function(){this.frozen=!1,this.removeClass("frozen")},top:function(){this.hasClass("top")||(this.addClass("top"),this.removeClass("notTop"),this.onTop&&this.onTop.call(this))},notTop:function(){this.hasClass("notTop")||(this.addClass("notTop"),this.removeClass("top"),this.onNotTop&&this.onNotTop.call(this))},bottom:function(){this.hasClass("bottom")||(this.addClass("bottom"),this.removeClass("notBottom"),this.onBottom&&this.onBottom.call(this))},notBottom:function(){this.hasClass("notBottom")||(this.addClass("notBottom"),this.removeClass("bottom"),this.onNotBottom&&this.onNotBottom.call(this))},shouldUnpin:function(t){return"down"===t.direction&&!t.top&&t.toleranceExceeded},shouldPin:function(t){return"up"===t.direction&&t.toleranceExceeded||t.top},addClass:function(t){this.elem.classList.add.apply(this.elem.classList,this.classes[t].split(" "))},removeClass:function(t){this.elem.classList.remove.apply(this.elem.classList,this.classes[t].split(" "))},hasClass:function(t){return this.classes[t].split(" ").every(function(t){return this.classList.contains(t)},this.elem)},update:function(t){t.isOutOfBounds||!0!==this.frozen&&(t.top?this.top():this.notTop(),t.bottom?this.bottom():this.notBottom(),this.shouldUnpin(t)?this.unpin():this.shouldPin(t)&&this.pin())}},s.options={tolerance:{up:0,down:0},offset:0,scroller:t()?window:null,classes:{frozen:"headroom--frozen",pinned:"headroom--pinned",unpinned:"headroom--unpinned",top:"headroom--top",notTop:"headroom--not-top",bottom:"headroom--bottom",notBottom:"headroom--not-bottom",initial:"headroom"}},s.cutsTheMustard=!!(t()&&function(){}.bind&&"classList"in document.documentElement&&Object.assign&&Object.keys&&requestAnimationFrame),s});
 </script>
 <script>/*!
  * clipboard.js v2.0.11
@@ -3965,7 +3957,7 @@ vertical-align: -.125em;
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">10-12</h1>
+<div class="quarto-title-block"><div><h1 class="title">10-12</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
 </div>
 
 
@@ -3982,7 +3974,7 @@ vertical-align: -.125em;
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">December 3, 2025</p>
+      <p class="date">December 4, 2025</p>
     </div>
   </div>
   
@@ -4084,18 +4076,7 @@ vertical-align: -.125em;
 <span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a>openbusstops_data <span class="ot">&lt;-</span> <span class="fu">read_sf</span>(geodata, </span>
 <span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a>                             <span class="at">layer =</span> <span class="st">&quot;OpenBus Bus Stops&quot;</span>)</span>
 <span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a>trainstation_data <span class="ot">&lt;-</span> <span class="fu">read_sf</span>(geodata, </span>
-<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a>                             <span class="at">layer =</span> <span class="st">&quot;ORR Transport_Train_Station_Passengers&quot;</span>)</span>
-<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a>airports <span class="ot">&lt;-</span> <span class="fu">opq</span>(bbox) <span class="sc">|&gt;</span> </span>
-<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_osm_feature</span>(<span class="at">key =</span> <span class="st">&quot;aeroway&quot;</span>, <span class="at">value =</span> <span class="st">&quot;aerodrome&quot;</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a>  <span class="fu">osmdata_sf</span>() <span class="sc">|&gt;</span> </span>
-<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a>  <span class="fu">use_series</span>(osm_polygons) <span class="sc">|&gt;</span> </span>
-<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_transform</span>(<span class="at">crs =</span> <span class="dv">27700</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_intersection</span>(border <span class="sc">|&gt;</span> <span class="fu">st_transform</span>(<span class="at">crs =</span> <span class="dv">27700</span>))</span>
-<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a>dft <span class="ot">&lt;-</span> <span class="fu">read_sf</span>(geodata, <span class="at">layer =</span> <span class="st">&quot;DfT Counts&quot;</span>)</span>
-<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a>dft_color <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;green&quot;</span>, <span class="st">&quot;coral&quot;</span>, <span class="st">&quot;#DC143C&quot;</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a>                             <span class="at">layer =</span> <span class="st">&quot;ORR Transport_Train_Station_Passengers&quot;</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
 </section>
@@ -4159,7 +4140,7 @@ vertical-align: -.125em;
 <span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a>                 <span class="at">source =</span> route,</span>
 <span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a>                 <span class="at">line_width =</span> <span class="fl">0.1</span>,</span>
 <span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a>                 <span class="at">line_color =</span> <span class="st">&quot;lightblue&quot;</span>,</span>
-<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a>                 <span class="at">line_blur =</span> <span class="dv">1</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a>                 <span class="at">line_blur =</span> <span class="dv">1</span>) <span class="sc">|&gt;</span> <span class="fu">add_fullscreen_control</span>(<span class="at">position =</span> <span class="st">&quot;top-left&quot;</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
 <div class="cell">
@@ -4226,6 +4207,8 @@ vertical-align: -.125em;
 </figure>
 </div>
 
+
+<!-- -->
 
 </section>
 
@@ -4300,6 +4283,57 @@ vertical-align: -.125em;
         container: window.document.getElementById('quarto-embedded-source-code-modal')
       });
       clipboardModal.on('success', onCopySuccess);
+    }
+    const viewSource = window.document.getElementById('quarto-view-source') ||
+                       window.document.getElementById('quarto-code-tools-source');
+    if (viewSource) {
+      const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+      viewSource.addEventListener("click", function(e) {
+        if (sourceUrl) {
+          // rstudio viewer pane
+          if (/\bcapabilities=\b/.test(window.location)) {
+            window.open(sourceUrl);
+          } else {
+            window.location.href = sourceUrl;
+          }
+        } else {
+          const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+          modal.show();
+        }
+        return false;
+      });
+    }
+    function toggleCodeHandler(show) {
+      return function(e) {
+        const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+        for (let i=0; i<detailsSrc.length; i++) {
+          const details = detailsSrc[i].parentElement;
+          if (show) {
+            details.open = true;
+          } else {
+            details.removeAttribute("open");
+          }
+        }
+        const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+        const fromCls = show ? "hidden" : "unhidden";
+        const toCls = show ? "unhidden" : "hidden";
+        for (let i=0; i<cellCodeDivs.length; i++) {
+          const codeDiv = cellCodeDivs[i];
+          if (codeDiv.classList.contains(fromCls)) {
+            codeDiv.classList.remove(fromCls);
+            codeDiv.classList.add(toCls);
+          } 
+        }
+        return false;
+      }
+    }
+    const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+    if (hideAllCode) {
+      hideAllCode.addEventListener("click", toggleCodeHandler(false));
+    }
+    const showAllCode = window.document.getElementById("quarto-show-all-code");
+    if (showAllCode) {
+      showAllCode.addEventListener("click", toggleCodeHandler(true));
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
@@ -4629,7 +4663,212 @@ vertical-align: -.125em;
       }
     }
   });
-  </script>
+  </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> &quot;10-12&quot;</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> Mark McNamara</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> last-modified</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="fu"># Setup</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>Some housekeeping to get all shared datasets in one place. Feel free to skip this bit.</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="in">```{r setup}</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(sf)</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(stringr)</span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lubridate)</span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyr)</span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(purrr)</span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(units)</span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(leaflet)</span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(leaflet.extras)</span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(leaflet.extras2)</span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(leafem)</span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(mapview)</span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(mapgl)</span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tmap)</span>
+<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(mapsf)</span>
+<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(jsonlite)</span>
+<span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidytransit)</span>
+<span id="cb5-31"><a href="#cb5-31" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(osmdata)</span>
+<span id="cb5-32"><a href="#cb5-32" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(magrittr)</span>
+<span id="cb5-33"><a href="#cb5-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-34"><a href="#cb5-34" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(png)</span>
+<span id="cb5-35"><a href="#cb5-35" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb5-36"><a href="#cb5-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-37"><a href="#cb5-37" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(rnaturalearth)</span>
+<span id="cb5-38"><a href="#cb5-38" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(rnaturalearthdata)</span>
+<span id="cb5-39"><a href="#cb5-39" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(rmapshaper)</span>
+<span id="cb5-40"><a href="#cb5-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-41"><a href="#cb5-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-42"><a href="#cb5-42" aria-hidden="true" tabindex="-1"></a>geodata <span class="ot">&lt;-</span> <span class="st">&quot;../30days2025/data/west sussex_tss_review_20250714a_esuid.gpkg&quot;</span></span>
+<span id="cb5-43"><a href="#cb5-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-44"><a href="#cb5-44" aria-hidden="true" tabindex="-1"></a>dft <span class="ot">&lt;-</span> <span class="fu">read_sf</span>(geodata, <span class="at">layer =</span> <span class="st">&quot;DfT Counts&quot;</span>)</span>
+<span id="cb5-45"><a href="#cb5-45" aria-hidden="true" tabindex="-1"></a>dft_color <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;green&quot;</span>, <span class="st">&quot;coral&quot;</span>, <span class="st">&quot;#DC143C&quot;</span>)</span>
+<span id="cb5-46"><a href="#cb5-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-47"><a href="#cb5-47" aria-hidden="true" tabindex="-1"></a>tss <span class="ot">&lt;-</span> <span class="fu">read_sf</span>(geodata, <span class="at">layer =</span> <span class="st">&quot;TSS Checklist&quot;</span>)</span>
+<span id="cb5-48"><a href="#cb5-48" aria-hidden="true" tabindex="-1"></a>border <span class="ot">&lt;-</span> <span class="fu">read_sf</span>(geodata, <span class="at">layer =</span> <span class="st">&quot;TSS Boundary&quot;</span>) <span class="sc">|&gt;</span> <span class="fu">st_transform</span>(<span class="at">crs =</span> <span class="dv">4326</span>)</span>
+<span id="cb5-49"><a href="#cb5-49" aria-hidden="true" tabindex="-1"></a>chi <span class="ot">&lt;-</span> </span>
+<span id="cb5-50"><a href="#cb5-50" aria-hidden="true" tabindex="-1"></a>    <span class="fu">st_point</span>(<span class="fu">c</span>(<span class="sc">-</span><span class="fl">0.778399</span>,<span class="fl">50.836408</span>)) <span class="sc">|&gt;</span> </span>
+<span id="cb5-51"><a href="#cb5-51" aria-hidden="true" tabindex="-1"></a>    <span class="fu">st_sfc</span>(<span class="at">crs =</span> <span class="dv">4326</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb5-52"><a href="#cb5-52" aria-hidden="true" tabindex="-1"></a>    <span class="fu">st_sf</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb5-53"><a href="#cb5-53" aria-hidden="true" tabindex="-1"></a>    <span class="fu">st_transform</span>(<span class="at">crs =</span> <span class="dv">27700</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb5-54"><a href="#cb5-54" aria-hidden="true" tabindex="-1"></a>    <span class="fu">st_buffer</span>(<span class="at">dist =</span> <span class="dv">4000</span>)</span>
+<span id="cb5-55"><a href="#cb5-55" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-56"><a href="#cb5-56" aria-hidden="true" tabindex="-1"></a>tss_min <span class="ot">&lt;-</span> tss <span class="sc">|&gt;</span> <span class="fu">st_intersection</span>(chi)</span>
+<span id="cb5-57"><a href="#cb5-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-58"><a href="#cb5-58" aria-hidden="true" tabindex="-1"></a><span class="co"># leaflet_zoom_chi &lt;- c(lng = -0.778399, lat = 50.836408, zoom = 09)</span></span>
+<span id="cb5-59"><a href="#cb5-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-60"><a href="#cb5-60" aria-hidden="true" tabindex="-1"></a>image_dir <span class="ot">&lt;-</span> <span class="st">&quot;../30days2025/images/&quot;</span></span>
+<span id="cb5-61"><a href="#cb5-61" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-62"><a href="#cb5-62" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> <span class="fu">paste0</span>(image_dir, <span class="st">&quot;szhn4a.PNG&quot;</span>)</span>
+<span id="cb5-63"><a href="#cb5-63" aria-hidden="true" tabindex="-1"></a><span class="co"># gtfs &lt;- read_gtfs(&quot;.../__WSCC/OpenBusData/download/South East - Download timetables data in GTFS format/itm_south_east_gtfs.zip&quot;)</span></span>
+<span id="cb5-64"><a href="#cb5-64" aria-hidden="true" tabindex="-1"></a><span class="co"># bus &lt;- gtfs$stops |&gt; st_as_sf(coords = c(&quot;stop_lon&quot;, &quot;stop_lat&quot;), crs = 4326) |&gt; st_intersection(border)</span></span>
+<span id="cb5-65"><a href="#cb5-65" aria-hidden="true" tabindex="-1"></a><span class="co"># st_write(bus, &quot;../30days2025/data/bus.gpkg&quot;)</span></span>
+<span id="cb5-66"><a href="#cb5-66" aria-hidden="true" tabindex="-1"></a>bus <span class="ot">&lt;-</span> <span class="fu">read_sf</span>(<span class="st">&quot;../30days2025/data/bus.gpkg&quot;</span>, <span class="at">layer =</span> <span class="st">&quot;bus&quot;</span>)</span>
+<span id="cb5-67"><a href="#cb5-67" aria-hidden="true" tabindex="-1"></a>train <span class="ot">&lt;-</span> <span class="fu">read_sf</span>(geodata, <span class="at">layer =</span> <span class="st">&quot;ORR Transport_Train_Station_Passengers&quot;</span>) <span class="sc">|&gt;</span> <span class="fu">st_transform</span>(<span class="at">crs =</span> <span class="dv">4326</span>)</span>
+<span id="cb5-68"><a href="#cb5-68" aria-hidden="true" tabindex="-1"></a>bus_routes <span class="ot">&lt;-</span> <span class="fu">read_sf</span>(<span class="st">&quot;../../__WSCC/OpenBusData/_bods_app/data/Bus_routes 2025-11-07 11-38-25_out-of-date/Bus_routes.shp&quot;</span>)</span>
+<span id="cb5-69"><a href="#cb5-69" aria-hidden="true" tabindex="-1"></a>bus_routes <span class="ot">&lt;-</span> bus_routes <span class="sc">|&gt;</span> <span class="fu">st_transform</span>(<span class="at">crs =</span> <span class="dv">4326</span>) <span class="sc">|&gt;</span> <span class="fu">st_intersection</span>(border)</span>
+<span id="cb5-70"><a href="#cb5-70" aria-hidden="true" tabindex="-1"></a>nominatim_polygon <span class="ot">&lt;-</span> nominatimlite<span class="sc">::</span><span class="fu">geo_lite_sf</span>( <span class="at">address =</span> <span class="st">&quot;west sussex, uk&quot;</span>, <span class="at">points_only =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb5-71"><a href="#cb5-71" aria-hidden="true" tabindex="-1"></a>bbox <span class="ot">&lt;-</span> sf<span class="sc">::</span><span class="fu">st_bbox</span>(nominatim_polygon)</span>
+<span id="cb5-72"><a href="#cb5-72" aria-hidden="true" tabindex="-1"></a><span class="co"># train_routes &lt;- opq(bbox) |&gt; </span></span>
+<span id="cb5-73"><a href="#cb5-73" aria-hidden="true" tabindex="-1"></a><span class="co">#   add_osm_feature(key = &quot;route&quot;, value = &quot;train&quot;) |&gt; </span></span>
+<span id="cb5-74"><a href="#cb5-74" aria-hidden="true" tabindex="-1"></a><span class="co">#   osmdata_sf() |&gt; </span></span>
+<span id="cb5-75"><a href="#cb5-75" aria-hidden="true" tabindex="-1"></a><span class="co">#   use_series(osm_lines)</span></span>
+<span id="cb5-76"><a href="#cb5-76" aria-hidden="true" tabindex="-1"></a><span class="co"># train_routes &lt;- train_routes |&gt; st_intersection(border)</span></span>
+<span id="cb5-77"><a href="#cb5-77" aria-hidden="true" tabindex="-1"></a><span class="co"># # error writing file: Field count reached: duplicate names present?</span></span>
+<span id="cb5-78"><a href="#cb5-78" aria-hidden="true" tabindex="-1"></a><span class="co"># # check</span></span>
+<span id="cb5-79"><a href="#cb5-79" aria-hidden="true" tabindex="-1"></a><span class="co"># which(duplicated(toupper(names(train_routes))))</span></span>
+<span id="cb5-80"><a href="#cb5-80" aria-hidden="true" tabindex="-1"></a><span class="co"># # locate</span></span>
+<span id="cb5-81"><a href="#cb5-81" aria-hidden="true" tabindex="-1"></a><span class="co"># names(train_routes)[30]</span></span>
+<span id="cb5-82"><a href="#cb5-82" aria-hidden="true" tabindex="-1"></a><span class="co"># # fixme</span></span>
+<span id="cb5-83"><a href="#cb5-83" aria-hidden="true" tabindex="-1"></a><span class="co"># train_routes &lt;- train_routes |&gt; select(-fixme)</span></span>
+<span id="cb5-84"><a href="#cb5-84" aria-hidden="true" tabindex="-1"></a><span class="co"># st_write(train_routes, &quot;../30days2025/data/train_routes.gpkg&quot;)</span></span>
+<span id="cb5-85"><a href="#cb5-85" aria-hidden="true" tabindex="-1"></a>train_routes <span class="ot">&lt;-</span> <span class="fu">read_sf</span>(<span class="st">&quot;../30days2025/data/train_routes.gpkg&quot;</span>, <span class="at">layer =</span> <span class="st">&quot;train_routes&quot;</span>)</span>
+<span id="cb5-86"><a href="#cb5-86" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-87"><a href="#cb5-87" aria-hidden="true" tabindex="-1"></a>oa1 <span class="ot">&lt;-</span> <span class="fu">read_sf</span>(<span class="st">&quot;../Kolochep/shapefile/Output_Areas_2021_WSx_pop.shp&quot;</span>)</span>
+<span id="cb5-88"><a href="#cb5-88" aria-hidden="true" tabindex="-1"></a>d <span class="ot">&lt;-</span> <span class="fu">read_sf</span>(<span class="st">&quot;../Kolochep/shapefile/districts/districts/OS.WESTSUSSEX_DISTRICT.shp&quot;</span>)</span>
+<span id="cb5-89"><a href="#cb5-89" aria-hidden="true" tabindex="-1"></a>d <span class="ot">&lt;-</span> d <span class="sc">|&gt;</span> <span class="fu">select</span>(NAME)</span>
+<span id="cb5-90"><a href="#cb5-90" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-91"><a href="#cb5-91" aria-hidden="true" tabindex="-1"></a><span class="co"># local data</span></span>
+<span id="cb5-92"><a href="#cb5-92" aria-hidden="true" tabindex="-1"></a>openbusstops_data <span class="ot">&lt;-</span> <span class="fu">read_sf</span>(geodata, </span>
+<span id="cb5-93"><a href="#cb5-93" aria-hidden="true" tabindex="-1"></a>                             <span class="at">layer =</span> <span class="st">&quot;OpenBus Bus Stops&quot;</span>)</span>
+<span id="cb5-94"><a href="#cb5-94" aria-hidden="true" tabindex="-1"></a>trainstation_data <span class="ot">&lt;-</span> <span class="fu">read_sf</span>(geodata, </span>
+<span id="cb5-95"><a href="#cb5-95" aria-hidden="true" tabindex="-1"></a>                             <span class="at">layer =</span> <span class="st">&quot;ORR Transport_Train_Station_Passengers&quot;</span>)</span>
+<span id="cb5-96"><a href="#cb5-96" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-97"><a href="#cb5-97" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb5-98"><a href="#cb5-98" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-99"><a href="#cb5-99" aria-hidden="true" tabindex="-1"></a><span class="fu"># | Day 10 - Air #rstats</span></span>
+<span id="cb5-100"><a href="#cb5-100" aria-hidden="true" tabindex="-1"></a>Mapping 7698 airports and 67443 routes</span>
+<span id="cb5-101"><a href="#cb5-101" aria-hidden="true" tabindex="-1"></a>Data from: github.com/jpatokal/ope...</span>
+<span id="cb5-102"><a href="#cb5-102" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-103"><a href="#cb5-103" aria-hidden="true" tabindex="-1"></a><span class="in">```{r day10a}</span></span>
+<span id="cb5-104"><a href="#cb5-104" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
+<span id="cb5-105"><a href="#cb5-105" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-106"><a href="#cb5-106" aria-hidden="true" tabindex="-1"></a><span class="co"># maplibre: dataset too big - not run</span></span>
+<span id="cb5-107"><a href="#cb5-107" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-108"><a href="#cb5-108" aria-hidden="true" tabindex="-1"></a>plane <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">&quot;../30days2025/data/airports/airports.csv&quot;</span>, <span class="at">show_col_types =</span> <span class="cn">FALSE</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb5-109"><a href="#cb5-109" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_as_sf</span>(<span class="at">coords =</span> <span class="fu">c</span>(<span class="st">&quot;Lon&quot;</span>, <span class="st">&quot;Lat&quot;</span>), <span class="at">crs =</span> <span class="dv">4326</span>)</span>
+<span id="cb5-110"><a href="#cb5-110" aria-hidden="true" tabindex="-1"></a>plane<span class="sc">$</span>AirportID <span class="ot">&lt;-</span> <span class="fu">as.character</span>(plane<span class="sc">$</span>AirportID)</span>
+<span id="cb5-111"><a href="#cb5-111" aria-hidden="true" tabindex="-1"></a>route <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">&quot;../30days2025/data/airports/routes.csv&quot;</span>,</span>
+<span id="cb5-112"><a href="#cb5-112" aria-hidden="true" tabindex="-1"></a>                  <span class="at">show_col_types =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb5-113"><a href="#cb5-113" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-114"><a href="#cb5-114" aria-hidden="true" tabindex="-1"></a>route <span class="ot">&lt;-</span> route <span class="sc">|&gt;</span> <span class="fu">filter</span>(SourceAirportID <span class="sc">!=</span> <span class="st">&quot;</span><span class="sc">\\</span><span class="st">N&quot;</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb5-115"><a href="#cb5-115" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(DestinationAirportID <span class="sc">!=</span> <span class="st">&quot;</span><span class="sc">\\</span><span class="st">N&quot;</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb5-116"><a href="#cb5-116" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(Stops <span class="sc">==</span> <span class="dv">0</span>)</span>
+<span id="cb5-117"><a href="#cb5-117" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-118"><a href="#cb5-118" aria-hidden="true" tabindex="-1"></a>route <span class="ot">&lt;-</span> route <span class="sc">|&gt;</span> <span class="fu">filter</span>(SourceAirportID <span class="sc">!=</span> DestinationAirportID)</span>
+<span id="cb5-119"><a href="#cb5-119" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-120"><a href="#cb5-120" aria-hidden="true" tabindex="-1"></a>route <span class="ot">&lt;-</span> route <span class="sc">|&gt;</span> <span class="fu">filter</span>(SourceAirportID <span class="sc">%in%</span> plane<span class="sc">$</span>AirportID) <span class="sc">|&gt;</span> </span>
+<span id="cb5-121"><a href="#cb5-121" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(DestinationAirportID <span class="sc">%in%</span> plane<span class="sc">$</span>AirportID)</span>
+<span id="cb5-122"><a href="#cb5-122" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-123"><a href="#cb5-123" aria-hidden="true" tabindex="-1"></a><span class="co"># creating route linestring geometry ----</span></span>
+<span id="cb5-124"><a href="#cb5-124" aria-hidden="true" tabindex="-1"></a>draw_route <span class="ot">&lt;-</span> <span class="cf">function</span>(x, plane){</span>
+<span id="cb5-125"><a href="#cb5-125" aria-hidden="true" tabindex="-1"></a>    line <span class="ot">&lt;-</span> <span class="fu">st_sfc</span>(</span>
+<span id="cb5-126"><a href="#cb5-126" aria-hidden="true" tabindex="-1"></a>      <span class="fu">st_linestring</span>(</span>
+<span id="cb5-127"><a href="#cb5-127" aria-hidden="true" tabindex="-1"></a>        <span class="fu">rbind</span>(</span>
+<span id="cb5-128"><a href="#cb5-128" aria-hidden="true" tabindex="-1"></a>          <span class="fu">st_coordinates</span>(</span>
+<span id="cb5-129"><a href="#cb5-129" aria-hidden="true" tabindex="-1"></a>            plane[<span class="fu">as.character</span>(plane<span class="sc">$</span>AirportID) <span class="sc">==</span> x<span class="sc">$</span>SourceAirportID, ]</span>
+<span id="cb5-130"><a href="#cb5-130" aria-hidden="true" tabindex="-1"></a>          ),</span>
+<span id="cb5-131"><a href="#cb5-131" aria-hidden="true" tabindex="-1"></a>          <span class="fu">st_coordinates</span>(</span>
+<span id="cb5-132"><a href="#cb5-132" aria-hidden="true" tabindex="-1"></a>            plane[<span class="fu">as.character</span>(plane<span class="sc">$</span>AirportID) <span class="sc">==</span> x<span class="sc">$</span>DestinationAirportID, ]</span>
+<span id="cb5-133"><a href="#cb5-133" aria-hidden="true" tabindex="-1"></a>          )</span>
+<span id="cb5-134"><a href="#cb5-134" aria-hidden="true" tabindex="-1"></a>        )</span>
+<span id="cb5-135"><a href="#cb5-135" aria-hidden="true" tabindex="-1"></a>      ), <span class="at">crs =</span> <span class="dv">4326</span></span>
+<span id="cb5-136"><a href="#cb5-136" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb5-137"><a href="#cb5-137" aria-hidden="true" tabindex="-1"></a>    <span class="fu">return</span>(line)</span>
+<span id="cb5-138"><a href="#cb5-138" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb5-139"><a href="#cb5-139" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-140"><a href="#cb5-140" aria-hidden="true" tabindex="-1"></a>route_geometry <span class="ot">&lt;-</span> <span class="fu">map</span>(<span class="dv">1</span><span class="sc">:</span><span class="fu">nrow</span>(route), </span>
+<span id="cb5-141"><a href="#cb5-141" aria-hidden="true" tabindex="-1"></a>                      \(x) <span class="fu">draw_route</span>(route[x, ], plane)) </span>
+<span id="cb5-142"><a href="#cb5-142" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb5-143"><a href="#cb5-143" aria-hidden="true" tabindex="-1"></a><span class="co"># bind list of linetrings into dataframe</span></span>
+<span id="cb5-144"><a href="#cb5-144" aria-hidden="true" tabindex="-1"></a>route_geometry_df <span class="ot">&lt;-</span> <span class="fu">do.call</span>(rbind, route_geometry)</span>
+<span id="cb5-145"><a href="#cb5-145" aria-hidden="true" tabindex="-1"></a><span class="co"># make dataframe a sf column</span></span>
+<span id="cb5-146"><a href="#cb5-146" aria-hidden="true" tabindex="-1"></a>route_geometry_df <span class="ot">&lt;-</span> route_geometry_df <span class="sc">|&gt;</span> <span class="fu">st_as_sfc</span>(<span class="at">crs =</span> <span class="dv">4326</span>)</span>
+<span id="cb5-147"><a href="#cb5-147" aria-hidden="true" tabindex="-1"></a><span class="co"># combine that with the route</span></span>
+<span id="cb5-148"><a href="#cb5-148" aria-hidden="true" tabindex="-1"></a><span class="fu">st_geometry</span>(route) <span class="ot">&lt;-</span> route_geometry_df</span>
+<span id="cb5-149"><a href="#cb5-149" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-150"><a href="#cb5-150" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-151"><a href="#cb5-151" aria-hidden="true" tabindex="-1"></a><span class="fu">maplibre</span>(<span class="at">style =</span> <span class="fu">carto_style</span>(<span class="st">&quot;dark-matter&quot;</span>)) <span class="sc">|&gt;</span> </span>
+<span id="cb5-152"><a href="#cb5-152" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_circle_layer</span>(<span class="at">id =</span> <span class="st">&quot;airport&quot;</span>,</span>
+<span id="cb5-153"><a href="#cb5-153" aria-hidden="true" tabindex="-1"></a>                   <span class="at">source =</span> plane,</span>
+<span id="cb5-154"><a href="#cb5-154" aria-hidden="true" tabindex="-1"></a>                   <span class="at">circle_color =</span> <span class="st">&quot;limegreen&quot;</span>,</span>
+<span id="cb5-155"><a href="#cb5-155" aria-hidden="true" tabindex="-1"></a>                   <span class="at">circle_blur =</span> <span class="dv">1</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb5-156"><a href="#cb5-156" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_line_layer</span>(<span class="at">id =</span> <span class="st">&quot;route&quot;</span>,</span>
+<span id="cb5-157"><a href="#cb5-157" aria-hidden="true" tabindex="-1"></a>                 <span class="at">source =</span> route,</span>
+<span id="cb5-158"><a href="#cb5-158" aria-hidden="true" tabindex="-1"></a>                 <span class="at">line_width =</span> <span class="fl">0.1</span>,</span>
+<span id="cb5-159"><a href="#cb5-159" aria-hidden="true" tabindex="-1"></a>                 <span class="at">line_color =</span> <span class="st">&quot;lightblue&quot;</span>,</span>
+<span id="cb5-160"><a href="#cb5-160" aria-hidden="true" tabindex="-1"></a>                 <span class="at">line_blur =</span> <span class="dv">1</span>) <span class="sc">|&gt;</span> <span class="fu">add_fullscreen_control</span>(<span class="at">position =</span> <span class="st">&quot;top-left&quot;</span>)</span>
+<span id="cb5-161"><a href="#cb5-161" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb5-162"><a href="#cb5-162" aria-hidden="true" tabindex="-1"></a><span class="in">```{r day10b}</span></span>
+<span id="cb5-163"><a href="#cb5-163" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
+<span id="cb5-164"><a href="#cb5-164" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-165"><a href="#cb5-165" aria-hidden="true" tabindex="-1"></a><span class="co"># mapview: dataset too big - not run</span></span>
+<span id="cb5-166"><a href="#cb5-166" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-167"><a href="#cb5-167" aria-hidden="true" tabindex="-1"></a><span class="fu">mapview</span>(route) <span class="sc">+</span> <span class="fu">mapview</span>(plane, <span class="at">color =</span> <span class="st">&quot;red&quot;</span>) </span>
+<span id="cb5-168"><a href="#cb5-168" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb5-169"><a href="#cb5-169" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-170"><a href="#cb5-170" aria-hidden="true" tabindex="-1"></a><span class="fu">## image:</span></span>
+<span id="cb5-171"><a href="#cb5-171" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-172"><a href="#cb5-172" aria-hidden="true" tabindex="-1"></a><span class="al">![printout of map with title](../30days2025/images/day10-air2.png)</span></span>
+<span id="cb5-173"><a href="#cb5-173" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-174"><a href="#cb5-174" aria-hidden="true" tabindex="-1"></a><span class="fu"># | Day 11 - Minimal #rstats </span></span>
+<span id="cb5-175"><a href="#cb5-175" aria-hidden="true" tabindex="-1"></a>Using {mapsf} to create a minimal map showing, hopefully, solidarity with Ukraine.</span>
+<span id="cb5-176"><a href="#cb5-176" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-177"><a href="#cb5-177" aria-hidden="true" tabindex="-1"></a><span class="in">```{r day11}</span></span>
+<span id="cb5-178"><a href="#cb5-178" aria-hidden="true" tabindex="-1"></a>uk <span class="ot">&lt;-</span> <span class="fu">read_sf</span>(</span>
+<span id="cb5-179"><a href="#cb5-179" aria-hidden="true" tabindex="-1"></a>  <span class="fu">paste0</span>(<span class="st">&quot;https://ec.europa.eu/eurostat/cache/GISCO/distribution/v2/nuts/&quot;</span>,</span>
+<span id="cb5-180"><a href="#cb5-180" aria-hidden="true" tabindex="-1"></a>         <span class="st">&quot;geojson/NUTS_RG_03M_2016_3857_LEVL_2.geojson&quot;</span>),</span>
+<span id="cb5-181"><a href="#cb5-181" aria-hidden="true" tabindex="-1"></a>  <span class="at">stringsAsFactors =</span> <span class="cn">FALSE</span></span>
+<span id="cb5-182"><a href="#cb5-182" aria-hidden="true" tabindex="-1"></a>)  <span class="sc">|&gt;</span> <span class="fu">subset</span>(CNTR_CODE <span class="sc">==</span> <span class="st">&quot;UK&quot;</span>)</span>
+<span id="cb5-183"><a href="#cb5-183" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-184"><a href="#cb5-184" aria-hidden="true" tabindex="-1"></a>uk_all <span class="ot">&lt;-</span> uk <span class="sc">|&gt;</span> <span class="fu">st_union</span>() <span class="sc">|&gt;</span> <span class="fu">st_as_sf</span>()</span>
+<span id="cb5-185"><a href="#cb5-185" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-186"><a href="#cb5-186" aria-hidden="true" tabindex="-1"></a><span class="co"># set up map</span></span>
+<span id="cb5-187"><a href="#cb5-187" aria-hidden="true" tabindex="-1"></a><span class="fu">mf_map</span>(uk_all, <span class="at">col =</span> <span class="cn">NA</span>, <span class="at">border =</span> <span class="cn">NA</span>)</span>
+<span id="cb5-188"><a href="#cb5-188" aria-hidden="true" tabindex="-1"></a><span class="co"># create background</span></span>
+<span id="cb5-189"><a href="#cb5-189" aria-hidden="true" tabindex="-1"></a><span class="fu">mf_background</span>(<span class="at">filename =</span> <span class="st">&quot;../30days2025/images/ukr_flag.png&quot;</span>)</span>
+<span id="cb5-190"><a href="#cb5-190" aria-hidden="true" tabindex="-1"></a><span class="co"># create overlay</span></span>
+<span id="cb5-191"><a href="#cb5-191" aria-hidden="true" tabindex="-1"></a><span class="fu">mf_map</span>(uk_all, <span class="at">lwd =</span> <span class="dv">3</span>, <span class="at">col =</span> <span class="cn">NA</span>, <span class="at">border =</span> <span class="st">&quot;white&quot;</span>, <span class="at">add =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb5-192"><a href="#cb5-192" aria-hidden="true" tabindex="-1"></a><span class="co"># create text</span></span>
+<span id="cb5-193"><a href="#cb5-193" aria-hidden="true" tabindex="-1"></a><span class="fu">mf_credits</span>(</span>
+<span id="cb5-194"><a href="#cb5-194" aria-hidden="true" tabindex="-1"></a>  <span class="at">txt =</span> <span class="st">&quot;macka szechno #30DayMapChallenge | Day 11 - Minimal #rstats&quot;</span>,</span>
+<span id="cb5-195"><a href="#cb5-195" aria-hidden="true" tabindex="-1"></a>  <span class="at">col =</span> <span class="st">&quot;white&quot;</span></span>
+<span id="cb5-196"><a href="#cb5-196" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb5-197"><a href="#cb5-197" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb5-198"><a href="#cb5-198" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-199"><a href="#cb5-199" aria-hidden="true" tabindex="-1"></a><span class="fu"># | Day 12 - 2125 #GIS #krita</span></span>
+<span id="cb5-200"><a href="#cb5-200" aria-hidden="true" tabindex="-1"></a>The coastal plain around Noviomagus Reginorum once the floods have come and civilisation has reverted with wildmen to the north, east, and west, and the wide sea to the south.</span>
+<span id="cb5-201"><a href="#cb5-201" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-202"><a href="#cb5-202" aria-hidden="true" tabindex="-1"></a>Current flood risk data used to create new coastline.</span>
+<span id="cb5-203"><a href="#cb5-203" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-204"><a href="#cb5-204" aria-hidden="true" tabindex="-1"></a><span class="al">![Map created in Earthlight and annotated in krita](../Kolochep/images/2125.png)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal><i class="bi"></i></button></div>
+</div></div></div></div></div>
 </div> <!-- /content -->
 
 
