@@ -112,7 +112,7 @@
   <category>experimentation</category>
   <guid>https://your-website-url.example.com/posts/ascii-art/</guid>
   <pubDate>Sun, 14 Dec 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://your-website-url.example.com/posts/ascii-art/cat_ascii.png" medium="image" type="image/png"/>
+  <media:content url="https://your-website-url.example.com/posts/ascii-art/cat_ascii.png" medium="image" type="image/png" height="367" width="144"/>
 </item>
 <item>
   <title>Welcome To My Blog</title>
